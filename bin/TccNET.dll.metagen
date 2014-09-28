@@ -1,0 +1,53 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly TccNET, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class TCC.ErrorFunc: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IntPtr, String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(IntPtr, String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class TCC.C: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Void* State : Public
+    IntPtr RELOCATE_AUTO : Public, Static
+  Methods:
+    CompileString(String): PrivateScope, Public, HideBySig
+    Relocate(IntPtr): PrivateScope, Public, HideBySig
+    RelocateTo(Func`2): PrivateScope, Public, HideBySig
+    SetLibPath(String): PrivateScope, Public, HideBySig
+    SetOutputType(OutputType): PrivateScope, Public, HideBySig
+    SetErrorFunc(IntPtr, ErrorFunc): PrivateScope, Public, HideBySig
+    SetOptions(String): PrivateScope, Public, HideBySig
+    AddIncludePath(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    AddLibraryPath(String): PrivateScope, Public, HideBySig
+    OutputFile(String): PrivateScope, Public, HideBySig
+    Define(String, String): PrivateScope, Public, HideBySig
+    Undef(String): PrivateScope, Public, HideBySig
+    GetSymbol(String): PrivateScope, Public, HideBySig
+    GetFunc(String): PrivateScope, Public, HideBySig
+    AddSymbol(String, IntPtr): PrivateScope, Public, HideBySig
+    AddSymbol(String, Delegate): PrivateScope, Public, HideBySig
+    AddFile(String): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct TCC.OutputType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TCC.OutputType Memory = 0 : Public, Static, Literal, HasDefault
+    TCC.OutputType Exe = 1 : Public, Static, Literal, HasDefault
+    TCC.OutputType DLL = 2 : Public, Static, Literal, HasDefault
+    TCC.OutputType OBJ = 3 : Public, Static, Literal, HasDefault
+    TCC.OutputType Preprocess = 4 : Public, Static, Literal, HasDefault

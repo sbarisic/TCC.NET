@@ -1,0 +1,6 @@
+E:\Projects\TCC_NET\bin\TccTest.exe.config
+E:\Projects\TCC_NET\bin\TccTest.exe
+E:\Projects\TCC_NET\bin\TccTest.pdb
+E:\Projects\TCC_NET\TccTest\obj\Debug\TccTest.csprojResolveAssemblyReference.cache
+E:\Projects\TCC_NET\TccTest\obj\Debug\TccTest.exe
+E:\Projects\TCC_NET\TccTest\obj\Debug\TccTest.pdb
