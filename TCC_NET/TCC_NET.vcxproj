@@ -43,17 +43,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>E:\Projects\TCC_NET\bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>E:\Projects\TCC_NET\3rd_party\;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Projects\TCC_NET\3rd_party\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)3rd_party\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)3rd_party\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>E:\Projects\TCC_NET\bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>E:\Projects\TCC_NET\3rd_party\;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Projects\TCC_NET\3rd_party\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)3rd_party\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)3rd_party\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
