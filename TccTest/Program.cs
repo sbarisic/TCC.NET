@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
+using Language.NET;
 using TCC;
 
 namespace TccTest {
@@ -18,6 +20,7 @@ namespace TccTest {
 			Console.Title = "TCC.NET";
 
 			C Tiny = new C();
+
 			Tiny.SetLibPath("tcc");
 			Tiny.SetOutputType(OutputType.Memory);
 
@@ -26,6 +29,7 @@ namespace TccTest {
 
 			Tiny.CompileString("int FUNC_NAME(int A, int B) { WriteLine(\"Hello World!\"); return A + B; }");
 			Tiny.Relocate(C.RELOCATE_AUTO);
+
 
 			Console.WriteLine(Tiny.GetFunc<TestFunc>("Test")(2, 3));
 			Console.ReadLine();
