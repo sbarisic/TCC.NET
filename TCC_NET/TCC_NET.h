@@ -5,6 +5,8 @@
 using namespace System;
 using namespace System::Runtime::InteropServices;
 
+struct TCCState;
+
 #define TCCSTAT ((TCCState*)State)
 
 namespace TCC {

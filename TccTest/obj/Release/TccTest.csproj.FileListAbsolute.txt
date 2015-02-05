@@ -5,8 +5,8 @@ E:\Projects\TCC_NET\TccTest\obj\Release\TccTest.csprojResolveAssemblyReference.c
 E:\Projects\TCC_NET\TccTest\obj\Release\TccTest.exe
 E:\Projects\TCC_NET\TccTest\obj\Release\TccTest.pdb
 E:\Projects\TCC.NET\bin\TccTest.exe.config
-E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.exe
-E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.pdb
 E:\Projects\TCC.NET\bin\TccTest.exe
 E:\Projects\TCC.NET\bin\TccTest.pdb
 E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.csprojResolveAssemblyReference.cache
+E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.exe
+E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.pdb

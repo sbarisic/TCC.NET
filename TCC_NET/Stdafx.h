@@ -4,7 +4,9 @@
 
 #pragma once
 
+extern "C" {
 #include <libtcc.h>
+}
 
 #define GetFuncPointer(F) (Marshal::GetFunctionPointerForDelegate((F)).ToPointer())
 #define GetFuncPointerA(F) (Marshal::GetFunctionPointerForDelegate((F)))

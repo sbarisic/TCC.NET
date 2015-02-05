@@ -45,22 +45,23 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>$(SolutionDir)3rd_party\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)3rd_party\;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\Projects\TCC.NET\tcc;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Projects\TCC.NET\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>$(SolutionDir)3rd_party\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)3rd_party\;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\Projects\TCC.NET\tcc;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Projects\TCC.NET\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CallingConvention>Cdecl</CallingConvention>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -71,7 +72,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CallingConvention>Cdecl</CallingConvention>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -90,10 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="Stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="TCC_NET.cpp" />
   </ItemGroup>
   <ItemGroup>

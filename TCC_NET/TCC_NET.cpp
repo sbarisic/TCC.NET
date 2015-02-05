@@ -4,11 +4,13 @@
 
 #include "TCC_NET.h"
 
+/*
 const char my_program[] =
 	"int foo(int n) {\n"
 	//"    printf(\"Hello World!\\n\");\n"
 	"    return n + n;\n"
 	"}\n";
+*/
 
 namespace TCC {
 	static void TCCError(IntPtr Opaque, String^ Msg) {
