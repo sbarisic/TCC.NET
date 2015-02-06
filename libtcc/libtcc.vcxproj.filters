@@ -56,19 +56,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\tcc\i386-asm.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\tcc\libtcc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\tcc\tccelf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\tcc\tccgen.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\tcc\tccrun.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\tcc\arm-gen.c">
@@ -99,6 +87,18 @@
       <Filter>Source Files\optional</Filter>
     </ClCompile>
     <ClCompile Include="..\tcc\conftest.c">
+      <Filter>Source Files\optional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tcc\tccelf.c">
+      <Filter>Source Files\optional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tcc\tccgen.c">
+      <Filter>Source Files\optional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tcc\tccrun.c">
+      <Filter>Source Files\optional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tcc\i386-asm.c">
       <Filter>Source Files\optional</Filter>
     </ClCompile>
   </ItemGroup>

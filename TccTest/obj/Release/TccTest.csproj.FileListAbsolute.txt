@@ -10,3 +10,4 @@ E:\Projects\TCC.NET\bin\TccTest.pdb
 E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.csprojResolveAssemblyReference.cache
 E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.exe
 E:\Projects\TCC.NET\TccTest\obj\Release\TccTest.pdb
+E:\Projects\TCC.NET\bin\test.c

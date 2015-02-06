@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.IO;
 using System.Reflection;
 
 using Language.NET;
@@ -12,26 +13,30 @@ using TCC;
 namespace TccTest {
 	class Program {
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-		delegate int TestFunc(int A, int B);
+		delegate void MainFunc();
+
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-		delegate void WriteLineFunc(string Str);
+		delegate void StringFunc(string Arg);
+
+		static void WriteLine(string Str) {
+			Console.WriteLine(Str);
+		}
 
 		static void Main(string[] args) {
 			Console.Title = "TCC.NET";
-
 			C Tiny = new C();
 
 			Tiny.SetLibPath("tcc");
 			Tiny.SetOutputType(OutputType.Memory);
 
-			Tiny.Define("FUNC_NAME", "Test");
-			Tiny.AddSymbol("WriteLine", new WriteLineFunc(Console.WriteLine));
-
-			Tiny.CompileString("int FUNC_NAME(int A, int B) { WriteLine(\"Hello World!\"); return A + B; }");
+			Tiny.AddSymbol("WriteLine", new StringFunc(WriteLine));
+			Tiny.AddFile("test.c");
 			Tiny.Relocate(C.RELOCATE_AUTO);
 
+			MainFunc CMain = Tiny.GetFunc<MainFunc>("Main");
+			CMain();
 
-			Console.WriteLine(Tiny.GetFunc<TestFunc>("Test")(2, 3));
+			Console.WriteLine("Complete");
 			Console.ReadLine();
 		}
 	}
