@@ -45,15 +45,15 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>E:\Projects\TCC.NET\tcc;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Projects\TCC.NET\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)tcc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>TccNET</TargetName>
-    <IncludePath>E:\Projects\TCC.NET\tcc;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Projects\TCC.NET\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)tcc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
