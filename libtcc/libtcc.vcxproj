@@ -83,7 +83,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\tcc\coff.h" />
-    <ClInclude Include="..\tcc\config.h" />
+    <ClInclude Include="..\tcc\cnfig.h" />
     <ClInclude Include="..\tcc\elf.h" />
     <ClInclude Include="..\tcc\i386-asm.h" />
     <ClInclude Include="..\tcc\i386-tok.h" />

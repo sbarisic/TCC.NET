@@ -48,10 +48,10 @@
     <ClInclude Include="..\tcc\elf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\tcc\config.h">
+    <ClInclude Include="..\tcc\coff.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\tcc\coff.h">
+    <ClInclude Include="..\tcc\cnfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

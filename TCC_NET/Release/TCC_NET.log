@@ -1,9 +1,17 @@
-﻿Build started 18.3.2015. 18:49:44.
+﻿Build started 18.3.2015. 19:01:17.
      1>Project "E:\Projects\TCC.NET\TCC_NET\TCC_NET.vcxproj" on node 2 (Build target(s)).
      1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\TCC.NET\bin\TccNET.dll" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Projects\TCC.NET\bin\TccNET.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH /DLL Release\app.res
+         Release\AssemblyInfo.obj
+         Release\TCC_NET.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         libtcc.lib(libtcc.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+         Generating code
+         Finished generating code
+     1>TCC_NET.obj : warning LNK4248: unresolved typeref token (01000013) for 'TCCState'; image may not run
          TCC_NET.vcxproj -> E:\Projects\TCC.NET\bin\TccNET.dll
      1>Done Building Project "E:\Projects\TCC.NET\TCC_NET\TCC_NET.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.28
+Time Elapsed 00:00:06.30

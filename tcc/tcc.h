@@ -22,7 +22,7 @@
 #define _TCC_H
 
 #define _GNU_SOURCE
-#include "config.h"
+#include "cnfig.h"
 
 #ifdef CONFIG_TCCBOOT
 #include "tccboot.h"
